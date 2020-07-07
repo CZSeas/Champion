@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1923137015532086278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1923137015532086273}
+  - component: {fileID: 1923137015532086272}
+  - component: {fileID: 3839520668708510839}
+  - component: {fileID: 1074913477675682434}
+  m_Layer: 8
+  m_Name: Room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1923137015532086273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923137015532086278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1923137015532086272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923137015532086278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7a4601f81079e4ba60ef47ddee39cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilePrefab: {fileID: 6132433674546458608, guid: 2d48744c283bbcf48a3557547d16f495,
+    type: 3}
+  ceilPrefab: {fileID: 1137591438661632774, guid: 15b4762b9db15ea48a16fc0a7a7a7b05,
+    type: 3}
+  obstaclePrefab: {fileID: 4360399959886836106, guid: 2e364d287517ed54a95447890a194c7f,
+    type: 3}
+  outerWallPrefab: {fileID: 4360399959886836106, guid: cccfa7cafe779f446916840ecc9563e4,
+    type: 3}
+  teleporterPrefab: {fileID: 5439904925855832652, guid: 30c9a2609d8e2244ab18432516011cdf,
+    type: 3}
+  sceneTeleporterPrefab: {fileID: 4792785044252386501, guid: 375e55056e2ba2b49a426e9d7b72f2ed,
+    type: 3}
+  doorPrefab: {fileID: 4102067900979912580, guid: 42437fd70a828cf448e661ccbde841b2,
+    type: 3}
+  nextDoor: {fileID: 0}
+  prevDoor: {fileID: 0}
+  nextTeleporter: {fileID: 0}
+  spawner: {fileID: 0}
+  roomSize: {x: 15, y: 10}
+  tileSize: 4
+  obstaclePercent: 0
+  minObstacleHeight: 0.75
+  maxObstacleHeight: 7.5
+  obstacleSize: 3.9
+  wallThickness: 1
+  ceilSize: {x: 20, y: 20}
+  seed: 100
+  isStart: 0
+  isEnd: 0
+--- !u!65 &3839520668708510839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923137015532086278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1074913477675682434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923137015532086278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1073ee3133961b41bcfecee9f4db5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnemies: 20
+  minEnemies: 10
+  drops:
+  - {fileID: 2780351190807910488, guid: 5b452cc9350c36a41b1b9bad5361bf46, type: 3}
+  - {fileID: 4134273144737382729, guid: 971588b5fe895ea43bebf13862d6b0da, type: 3}
+  - {fileID: 4559923141146593541, guid: 7ddcb1986e776a540b807c0424fbfae0, type: 3}
+  - {fileID: 3141337067613071162, guid: 33d80d2c17e0377449dad36b4cc15f25, type: 3}
+  - {fileID: 3275999139169751092, guid: da957631707faa24aa4bcdfdf2cb006b, type: 3}
+  moneyDrop: {fileID: 7689331327854917260, guid: f0b37240fe4ab724f8a579afca4af28b,
+    type: 3}
